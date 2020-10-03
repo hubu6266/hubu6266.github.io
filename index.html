@@ -1,11 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 1</title>
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
   </head>
   <body>
-    Welcome to my Page
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./mypage_bootstrap.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./projects.html">Projects</a>
+        </li>
+      </ul>
+    </nav>
+    <br />
+
+    <div class="container">
+      <p class="h1">
+        Bui, Hung -
+        <span style="color: gray">Software Development Methods and Tools</span>
+      </p>
+
+      <div class="card">
+        <div class="card-body">
+          I am a magician, a card magician. I like to play guitar and I really
+          enjoy reading books. I study Computer Science because I want to solve
+          problems, and one of the best way to solve problem is to use computer.
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="container">
+      <h2>My Professional Profile</h2>
+      <a href="https://github.com/hubu6266">My Github Account</a> <br />
+      <br />
+      <img
+        class="rounded-circle"
+        src="https://picsum.photos/500/500"
+        alt="loremflikr image"
+        width="500"
+        height="500"
+      />
+    </div>
+    <br /><br />
+
+    <div class="container">
+      <h3>My Favorite Projects</h3>
+      <table style="width: 50%">
+        <tr>
+          <th>Name of the Project</th>
+          <th>Technologies Used</th>
+        </tr>
+        <tr>
+          <td>Calculator</td>
+          <td>C#</td>
+        </tr>
+        <tr>
+          <td>Shopping Cart Website</td>
+          <td>HTML, CSS, JS, Node JS</td>
+        </tr>
+        <tr>
+          <td>Alarm Clock</td>
+          <td>Python</td>
+        </tr>
+      </table>
+    </div>
+    <br /><br />
+
+    <div class="container">
+      <h3 style="display: inline-block">My Interests</h3>
+      <button type="button" class="btn btn-info" style="float: right">
+        <a href="./form.html" style="text-decoration: none; color: white"
+          >Add Interest</a
+        >
+      </button>
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="http://lorempixel.com/80/70/sports/"
+              alt="magic"
+            />
+            <div class="card-body">
+              <h4>Guitar</h4>
+              <p class="card-text">Magic is the key.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="http://lorempixel.com/80/70/fashion/"
+              alt="guitar"
+            />
+            <div class="card-body">
+              <h4>Guitar</h4>
+              <p class="card-text">Guitar is my hobby.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="http://lorempixel.com/80/70/animals/"
+              alt="Magic"
+            />
+            <div class="card-body">
+              <h4>Mentalism</h4>
+              <p class="card-text">Mentalism is the tricky part.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <br />
+    <br />
+
+    <hr />
+    <div class="footer">
+      <div class="container text-center">
+        <a href="https://www.linkedin.com/in/hung-bui-34477a1b7/">
+          <img src="./img/1.png" alt="linkedin_icon" width="40" height="40"
+        /></a>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
