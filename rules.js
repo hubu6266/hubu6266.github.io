@@ -189,6 +189,87 @@ function play() {
 	}  
 }
 
+function check_winner() {
+	debugger;
+	if(this.board_state[0] === 1 && this.board_state[1] === 1 && this.board_state[2] === 1)
+	{
+		alert("Player "+1+" won the game.");
+		reset_play();
+	}
+	if(this.board_state[0] === 1 && this.board_state[3] === 1 && this.board_state[6] === 1)
+	{
+		alert("Player "+1+" won the game.");
+		reset_play();
+	}
+	if(this.board_state[1]=== 1 && this.board_state[4] === 1 && this.board_state[7] === 1)
+	{
+		alert("Player "+1+" won the game.");
+		reset_play();
+
+	}
+	if(this.board_state[2] === 1 && this.board_state[5] === 1 && this.board_state[8] === 1)
+	{
+		alert("Player "+1+" won the game.");
+		reset_play();
+
+	}
+	if(this.board_state[3] === 1 && this.board_state[4]=== 1 && this.board_state[5] === 1)
+	{
+		alert("Player "+1+" won the game.");
+		reset_play();
+
+	}
+	if (this.board_state[6]=== 1 && this.board_state[7] === 1 && this.board_state[8] === 1) {
+
+		alert("Player "+1+" won the game.");
+		reset_play();
+	}
+	if(this.board_state[2] === 1 && this.board_state[4] === 1 && this.board_state[6] === 1)
+	{
+		alert("Player "+1+" won the game.");
+		reset_play();
+	}
+
+   if(this.board_state[0] === 0 && this.board_state[1] === 0 && this.board_state[2] === 0)
+	{
+		alert("Player "+2+" won the game.");
+		reset_play();
+	}
+	if(this.board_state[0] === 0 && this.board_state[3] === 0 && this.board_state[6] === 0)
+	{
+		alert("Player "+2+" won the game.");
+		reset_play();
+	}
+	if(this.board_state[1]=== 0 && this.board_state[4] === 0 && this.board_state[7] === 0)
+	{
+		alert("Player "+2+" won the game.");
+		reset_play();
+
+	}
+	if(this.board_state[2] === 0 && this.board_state[5] === 0 && this.board_state[8] === 0)
+	{
+		alert("Player "+2+" won the game.");
+		reset_play();
+
+	}
+	if(this.board_state[3] === 0 && this.board_state[4]=== 0 && this.board_state[5] === 0)
+	{
+		alert("Player "+2+" won the game.");
+		reset_play();
+
+	}
+	if (this.board_state[6]=== 0 && this.board_state[7] === 0 && this.board_state[8] === 0) {
+
+		alert("Player "+2+" won the game.");
+		reset_play();
+	}
+	if(this.board_state[2] === 0 && this.board_state[4] === 0 && this.board_state[6] === 0)
+	{
+		alert("Player "+2+" won the game.");
+		reset_play();
+	}     
+}
+
 /*
 Do not change this method.
 */
