@@ -43,12 +43,12 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./login.html"
+          <a class="nav-link" href="./signup-modal/login.html"
             >Sign Up Modal</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./tic-tac-toe.html"
+          <a class="nav-link" href="./tic-tac-toe/tic-tac-toe.html"
             >Tic Tac Toe Game</a
           >
         </li>
@@ -188,13 +188,12 @@
       var card_id = 0;
       function addCard(id){
         card_id++;
-
-        var tweet = $('<div class="card"><button class="btn btn-danger" type="submit" onclick="removeCard(card_id)">-</button><img class="card-img-top" src="http://lorempixel.com/80/70/animals/" alt="Card image cap"></div>'); 
+        var tweet = $('<div class="card"><button class="btn btn-danger" type="submit" onclick="deleteCard(card_id)">-</button><img class="card-img-top" src="http://lorempixel.com/80/70/animals/" alt="Card image cap"></div>'); 
         
         tweet.appendTo('#' + id);
       }
       
-      function removeCard(card_id){
+      function deleteCard(card_id){
         document.getElementById(card_id).remove();
       }
     </script>
