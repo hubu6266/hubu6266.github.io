@@ -121,7 +121,7 @@
 
       <div class="row">
         <div class="col-sm">
-          <div class="card" style="width: 20rem">
+          <div class="card" style="width: 20rem"  id="interest1">
             <img
               class="card-img-top"
               src="http://lorempixel.com/80/70/sports/"
@@ -130,12 +130,13 @@
             <div class="card-body">
               <h4>Guitar</h4>
               <p class="card-text">Magic is the key.</p>
+              <button class="btn btn-primary" type="submit" id="button1" onclick="addCard('interest1')">+</button>
             </div>
           </div>
         </div>
 
         <div class="col-sm">
-          <div class="card" style="width: 20rem">
+          <div class="card" style="width: 20rem" id="interest2">
             <img
               class="card-img-top"
               src="http://lorempixel.com/80/70/fashion/"
@@ -144,12 +145,14 @@
             <div class="card-body">
               <h4>Guitar</h4>
               <p class="card-text">Guitar is my hobby.</p>
+              <button class="btn btn-primary" type="submit" id="button2" onclick="addCard('interest2')">+</button>
             </div>
           </div>
+          
         </div>
 
         <div class="col-sm">
-          <div class="card" style="width: 20rem">
+          <div class="card" style="width: 20rem" id="interest3">
             <img
               class="card-img-top"
               src="http://lorempixel.com/80/70/animals/"
@@ -158,6 +161,7 @@
             <div class="card-body">
               <h4>Mentalism</h4>
               <p class="card-text">Mentalism is the tricky part.</p>
+              <button class="btn btn-primary" type="submit" id="button3" onclick="addCard('interest3')">+</button>
             </div>
           </div>
         </div>
@@ -176,8 +180,23 @@
       </div>
     </div>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      var card_id = 0;
+      function addCard(id){
+        card_id++;
+        var tweet = $('<div class="card" id="card_id"><button class="btn btn-danger" type="submit" onclick="deleteCard('+ id + ')">-</button><img class="card-img-top" src="http://lorempixel.com/80/70/animals/" alt="Card image cap"></div>'); 
+        
+        tweet.appendTo('#' + id);
+      }
+      
+      function deleteCard(id){
+        var item = document.getElementById(id);
+        item.removeChild(card_id);
+      }
+    </script>
   </body>
 </html>
