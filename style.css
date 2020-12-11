@@ -1,0 +1,21 @@
+.header {
+  height: 140px;
+  background-color: #d6eaf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 300px;
+}
+
+.dropdown dropdown-item,
+.dropdown-toggle {
+  width: 300px;
+}
+
+.__margin {
+  margin: 20px;
+}
